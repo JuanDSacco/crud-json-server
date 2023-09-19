@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divCrudApp{
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Skranji', cursive;
+
+    h1{
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+}
+
+.divCrudForm{
+
+    input{
+        font-family: 'Skranji', cursive;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .inputSendReset{
+        cursor: pointer;
+    }
+
+    h3{
+        padding-bottom: 15px;
+    }
+
+    form{
+        padding-bottom: 30px;
+    }
+}
+
+.divCrudTable{
+    
+    border: 2px solid #000;
+    border-radius: 5%;
+    margin-bottom: 30px;
+
+    h3{
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .trCrudTable{
+
+        th{
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
+
+.trCrudTableRou{
+
+    button{
+        font-family: 'Skranji', cursive;
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    td{
+        padding: 10px;
+    }
+}

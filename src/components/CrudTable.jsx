@@ -3,17 +3,17 @@ import CrudTableRow from "./CrudTableRow";
 
 const CrudTable = ({ data, setDataToEdit, deleteData }) => {
     return (
-        <div>
+        <div className="divCrudTable">
         <h3>Tabla de Datos</h3>
         <table>
             <thead>
-            <tr>
+            <tr className="trCrudTable">
                 <th>Nombre</th>
                 <th>Tipo</th>
                 <th>Acciones</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody className="tbodyCrudTable">
             {data.length === 0 ? (
                 <tr>
                 <td>Sin datos</td>

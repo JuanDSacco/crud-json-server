@@ -2,12 +2,13 @@ import React from "react";
 import { useState } from "react";
 import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
+import '../styles/style.scss'
 
 const initialDb = [
     {
         id: 1,
         nombre: "Pikachu",
-        tipo: "Electrico"
+        tipo: "Eléctrico"
     },
     {
         id: 2,
@@ -55,8 +56,8 @@ const initialDb = [
     };
 
     return (
-        <div>
-        <h2>CRUD App</h2>
+        <div className="divCrudApp">
+            <h1>CRUD Pókemon</h1>
         <CrudForm
             createData={createData}
             updateData={updateData}
