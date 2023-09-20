@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
+import {IconUserPlus,IconX} from '@tabler/icons-react'
 
 const initialForm = {
     nombre:'',
@@ -61,9 +62,11 @@ const CrudForm = ({createData,updateData,dataToEdit,setDataToEdit}) => {
 
                 <input onChange={handleChange} value={form.tipo} type="text" name="tipo" placeholder='Tipo'/>
 
-                <input className='inputSendReset' type="submit" value='Enviar'/>
+                {/*<input className='inputSendReset' type="submit" value='Enviar'/>*/}
+                <button className='inputSendReset' ><IconUserPlus/></button>
 
-                <input className='inputSendReset' onClick={handleReset} type="reset" value='Reset'/>
+                {/*<input className='inputSendReset' onClick={handleReset} type="reset" value='Reset'/>*/}
+                <button className='inputSendReset' onClick={handleReset}><IconX/></button>
             </form>
         </div>
     )

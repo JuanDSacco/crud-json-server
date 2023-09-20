@@ -1,11 +1,11 @@
-import CrudApp from "./components/CrudApp"
+import CrudApi from "./components/CrudApi"
 
 
 function App() {
 
   return (
     <>
-      <CrudApp/>
+      <CrudApi/>
     </>
   )
 }

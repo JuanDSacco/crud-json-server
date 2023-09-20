@@ -17,8 +17,11 @@
     font-family: 'Skranji', cursive;
 
     h1{
-        padding-bottom: 30px;
         padding-top: 20px;
+    }
+
+    .divIconPokeball{
+        padding-bottom: 30px;
     }
 }
 
@@ -32,6 +35,8 @@
 
     .inputSendReset{
         cursor: pointer;
+        height: 30px;
+        margin-right: 7px;
     }
 
     h3{
@@ -39,6 +44,9 @@
     }
 
     form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         padding-bottom: 30px;
     }
 }
