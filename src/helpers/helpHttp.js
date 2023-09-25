@@ -1,4 +1,4 @@
-export const HelpHttp = () => {
+export const helpHttp = () => {
     const customFetch = (endpoint, options) => {
         const defaultHeader = {
         accept: "application/json",
@@ -17,8 +17,6 @@ export const HelpHttp = () => {
         options.body = JSON.stringify(options.body) || false;
 
         if (!options.body) delete options.body;
-
-        console.log(options);
 
         setTimeout(() => controller.abort(), 3000);
 
@@ -52,5 +50,5 @@ export const HelpHttp = () => {
         return customFetch(url,options)
     };
 
-    return get, post, put, del;
+    return {get, post, put, del};
 };

@@ -2,23 +2,23 @@
     "pokemon": [
         {
             "id": 1,
-            "nombre": "pikachu",
-            "tipo": "eléctrico"
+            "nombre": "Pikachu",
+            "tipo": "Eléctrico"
         },
         {
             "id": 2,
-            "nombre": "charmander",
-            "tipo": "fuego"
+            "nombre": "Charmander",
+            "tipo": "Fuego"
         },
         {
             "id": 3,
-            "nombre": "bulbasaur",
-            "tipo": "planta"
+            "nombre": "Bulbasaur",
+            "tipo": "Planta"
         },
         {
             "id": 4,
-            "nombre": "squirtle",
-            "tipo": "agua"
+            "nombre": "Squirtle",
+            "tipo": "Agua"
         }
     ]
 }

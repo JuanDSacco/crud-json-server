@@ -10,8 +10,8 @@ const CrudTableRow = ({el,setDataToEdit,deleteData}) => {
                 <td>{nombre}</td>
                 <td>{tipo}</td>
                 <td>
-                    <button onClick={() => {setDataToEdit(el)}}><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button onClick={() => deleteData(id)} ><i class="fa-solid fa-trash"></i></button>
+                    <button onClick={() => {setDataToEdit(el)}}><i className="fa-solid fa-pen-to-square"></i></button>
+                    <button onClick={() => deleteData(id)} ><i className="fa-solid fa-trash"></i></button>
                 </td>
             </tr>
         </>

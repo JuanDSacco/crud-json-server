@@ -1,15 +1,29 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState,useEffect } from "react";
 import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
 import '../styles/style.scss'
-import {IconPokeball} from '@tabler/icons-react'
+import { helpHttp } from "../helpers/helpHttp";
+
 
     const CrudApi = () => {
     const [db, setDb] = useState([]);
 
     const [dataToEdit, setDataToEdit] = useState(null);
 
+    let api = helpHttp();
+    let url = 'http://localhost:5000/pokemon';
+
+    useEffect(() => {
+
+        api.get(url).then((res) => {
+            if(!res.err){
+                setDb(res)
+            }else {
+                setDb(null)
+            }
+        })
+    },[])
+    
     const createData = (data) => {
         data.id = Date.now()
         setDb([...db, data])
@@ -36,9 +50,6 @@ import {IconPokeball} from '@tabler/icons-react'
     return (
         <div className="divCrudApp">
             <h1>CRUD Pókemon</h1>
-            <div className="divIconPokeball">
-                <IconPokeball size={45}/>
-            </div>
         <CrudForm
             createData={createData}
             updateData={updateData}
