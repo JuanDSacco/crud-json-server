@@ -19,6 +19,11 @@
       "id": 4,
       "nombre": "Squirtle",
       "tipo": "Agua"
+    },
+    {
+      "nombre": "Charizard",
+      "tipo": "Fuego",
+      "id": 1695847124234
     }
   ]
 }

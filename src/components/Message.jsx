@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/style.scss'
 
-
 const Message = ({msg,bgColor}) => {
 
     let styles = {
@@ -12,7 +11,6 @@ const Message = ({msg,bgColor}) => {
         fontWeight:'bold',
         backgroundColor:bgColor,
     };
-
 
     return (
         <div style={styles}>

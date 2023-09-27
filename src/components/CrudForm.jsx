@@ -45,27 +45,18 @@ const CrudForm = ({createData,updateData,dataToEdit,setDataToEdit}) => {
         handleReset()
     }
 
-
     const handleReset = () => {
         setForm(initialForm);
         setDataToEdit(null);
     }
-    
 
     return (
         <div className='divCrudForm'>
             <h3>{dataToEdit ? "Editar" : "Agregar" }</h3>
-            
             <form onSubmit={handleSubmit}>
-
                 <input onChange={handleChange} value={form.nombre} type="text" name="nombre" placeholder='Nombre'/>
-
                 <input onChange={handleChange} value={form.tipo} type="text" name="tipo" placeholder='Tipo'/>
-
-                {/*<input className='inputSendReset' type="submit" value='Enviar'/>*/}
                 <button className='inputSendReset' ><IconUserPlus/></button>
-
-                {/*<input className='inputSendReset' onClick={handleReset} type="reset" value='Reset'/>*/}
                 <button className='inputSendReset' onClick={handleReset}><IconX/></button>
             </form>
         </div>

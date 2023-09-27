@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/style.scss'
 
 const CrudTableRow = ({el,setDataToEdit,deleteData}) => {
 
-    let{nombre,tipo,id} = el
+    let {nombre,tipo,id} = el
 
     return (
         <>

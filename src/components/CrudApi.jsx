@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import "../styles/style.scss";
 import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
-import "../styles/style.scss";
 import { helpHttp } from "../helpers/helpHttp";
-import { IconPokeball } from "@tabler/icons-react";
 import Loader from "./Loader";
 import Message from "./Message";
+import { IconPokeball } from "@tabler/icons-react";
 
 const CrudApi = () => {
     const [db, setDb] = useState(null);
@@ -68,9 +68,6 @@ const CrudApi = () => {
             setError(res)
         )
         });
-
-        
-        
     };
 
     const deleteData = (id) => {

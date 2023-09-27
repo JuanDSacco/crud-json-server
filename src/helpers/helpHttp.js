@@ -1,3 +1,5 @@
+// Módulo exclusivo de lógica abstracta     
+
 export const helpHttp = () => {
 
     const customFetch = (endpoint, options) => {

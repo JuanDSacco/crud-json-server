@@ -1,7 +1,9 @@
 import React from "react";
+import '../styles/style.scss'
 import CrudTableRow from "./CrudTableRow";
 
 const CrudTable = ({ data, setDataToEdit, deleteData }) => {
+
     return (
         <div className="divCrudTable">
         <h3>Tabla de Datos</h3>
@@ -23,7 +25,6 @@ const CrudTable = ({ data, setDataToEdit, deleteData }) => {
                         deleteData={deleteData}
                     />
                     ))
-                
             ) : (
                 <tr>
                 <td>Sin datos</td>
